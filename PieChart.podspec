@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "PieChart"
-  s.version      = "1.0.0"
+  s.version      = "1.0.1"
   s.summary      = "PieChart contains how to draw pie chart and draw text on right position."
 
   # This description is used to generate tags and improve search results.
