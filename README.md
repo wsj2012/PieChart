@@ -3,4 +3,4 @@ Pie chart
 
 效果图：
 
-![baidu](https://github.com/wsj2012/Flop/blob/master/drop.gif)
+![baidu](https://github.com/wsj2012/PieChart/blob/master/piechart.png)
