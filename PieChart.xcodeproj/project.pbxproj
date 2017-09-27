@@ -16,6 +16,8 @@
 		A25FCBD51F7B7B24007E59BB /* PieChart.podspec in Resources */ = {isa = PBXBuildFile; fileRef = A25FCBD41F7B7B23007E59BB /* PieChart.podspec */; };
 		A25FCBD81F7B7B57007E59BB /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = A25FCBD61F7B7B57007E59BB /* README.md */; };
 		A25FCBD91F7B7B57007E59BB /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = A25FCBD71F7B7B57007E59BB /* LICENSE */; };
+		A25FCBDB1F7B7EDC007E59BB /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A25FCBDA1F7B7EDC007E59BB /* Info.plist */; };
+		A25FCBDF1F7B7F35007E59BB /* PieView.m in Sources */ = {isa = PBXBuildFile; fileRef = A25FCBDE1F7B7F35007E59BB /* PieView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,12 +28,14 @@
 		A25FCBBE1F7B738D007E59BB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		A25FCBC11F7B738D007E59BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A25FCBC61F7B738D007E59BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		A25FCBC81F7B738D007E59BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A25FCBC91F7B738D007E59BB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A25FCBD21F7B7B1B007E59BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = PieChart/Assets.xcassets; sourceTree = SOURCE_ROOT; };
 		A25FCBD41F7B7B23007E59BB /* PieChart.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; fileEncoding = 4; path = PieChart.podspec; sourceTree = SOURCE_ROOT; };
 		A25FCBD61F7B7B57007E59BB /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		A25FCBD71F7B7B57007E59BB /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = SOURCE_ROOT; };
+		A25FCBDA1F7B7EDC007E59BB /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = PieChart/Info.plist; sourceTree = SOURCE_ROOT; };
+		A25FCBDD1F7B7F35007E59BB /* PieView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PieView.h; sourceTree = "<group>"; };
+		A25FCBDE1F7B7F35007E59BB /* PieView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PieView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,13 +69,13 @@
 		A25FCBB91F7B738D007E59BB /* PieChart */ = {
 			isa = PBXGroup;
 			children = (
+				A25FCBDC1F7B7F09007E59BB /* PieChart */,
 				A25FCBBA1F7B738D007E59BB /* AppDelegate.h */,
 				A25FCBBB1F7B738D007E59BB /* AppDelegate.m */,
 				A25FCBBD1F7B738D007E59BB /* ViewController.h */,
 				A25FCBBE1F7B738D007E59BB /* ViewController.m */,
 				A25FCBC01F7B738D007E59BB /* Main.storyboard */,
 				A25FCBC51F7B738D007E59BB /* LaunchScreen.storyboard */,
-				A25FCBC81F7B738D007E59BB /* Info.plist */,
 				A25FCBC91F7B738D007E59BB /* main.m */,
 			);
 			path = PieChart;
@@ -80,12 +84,22 @@
 		A25FCBD11F7B7AAD007E59BB /* Surpporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A25FCBDA1F7B7EDC007E59BB /* Info.plist */,
 				A25FCBD71F7B7B57007E59BB /* LICENSE */,
 				A25FCBD61F7B7B57007E59BB /* README.md */,
 				A25FCBD41F7B7B23007E59BB /* PieChart.podspec */,
 				A25FCBD21F7B7B1B007E59BB /* Assets.xcassets */,
 			);
 			path = "Surpporting Files";
+			sourceTree = "<group>";
+		};
+		A25FCBDC1F7B7F09007E59BB /* PieChart */ = {
+			isa = PBXGroup;
+			children = (
+				A25FCBDD1F7B7F35007E59BB /* PieView.h */,
+				A25FCBDE1F7B7F35007E59BB /* PieView.m */,
+			);
+			path = PieChart;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,6 +166,7 @@
 				A25FCBD81F7B7B57007E59BB /* README.md in Resources */,
 				A25FCBD31F7B7B1B007E59BB /* Assets.xcassets in Resources */,
 				A25FCBC21F7B738D007E59BB /* Main.storyboard in Resources */,
+				A25FCBDB1F7B7EDC007E59BB /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -163,6 +178,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A25FCBBF1F7B738D007E59BB /* ViewController.m in Sources */,
+				A25FCBDF1F7B7F35007E59BB /* PieView.m in Sources */,
 				A25FCBCA1F7B738D007E59BB /* main.m in Sources */,
 				A25FCBBC1F7B738D007E59BB /* AppDelegate.m in Sources */,
 			);
